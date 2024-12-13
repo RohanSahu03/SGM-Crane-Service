@@ -1,0 +1,51 @@
+
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+/* .myNavbar{
+    height: 120px !important;
+    background-color:#686D76;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.logo{
+    width: 100px;
+    border: none;
+    outline: none;
+}
+.logoText{
+ font-size: 25px;
+ font-weight: 500;
+ font-family: Rubik,sans-serif;
+ /* animation: lights 5s 750ms linear infinite; */
+
+}
+@keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+  }
+
+.header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 799px) {
+    .logoText{
+        font-size: 20px;
+       }
+}

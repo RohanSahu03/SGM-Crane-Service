@@ -1,0 +1,297 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+/* .h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: #01204E;
+    text-shadow: 0px 0px 3px rgb(102, 68, 68);
+    display: flex;
+    justify-content: center; 
+    width: 80%;
+  } */
+.about-us-container{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+.about-us-container>.innerDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about-us-container>.innerDiv>.left{
+    width: 50%;
+    height: 380px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.about-us-container>.innerDiv>.left>img{
+    width: 100%;
+    height: 100%;transition: all 0.3s ease-in-out;
+    object-fit: cover;
+
+}
+.about-us-container>.innerDiv>.left>img:hover{
+    transform: scale(110%);
+}
+.about-us-container>.innerDiv>.right{
+    width: 50%;
+    height: auto;
+    padding-left: 30px;
+
+}
+.about-us-container>.innerDiv>.right>p{
+
+    width:90%;
+text-align: left;
+font-size: 17px;
+}
+.imgBox1{
+    height: 180px;
+    width: 100%;
+}
+.imgBox>img,.imgBox1>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+    .imgBox{
+        height: 250px;
+        padding: 30px;
+        font-size: 17px;
+    }
+    .speciality{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .speciality>h1{
+        width: 100%;
+        height: 10%;
+    }
+    .speciality>.lower{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .speciality>.lower>.card1,.speciality>.lower>.card2{
+        width: 90%;
+        height: 140px;
+        transform: skew(10deg);
+        background-color: #FEECE2;
+        margin-bottom: 30px;
+        color: black;
+        font-size: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .speciality>.lower>.card1:hover,.speciality>.lower>.card2:hover{
+        transition: all 0.5s ease-in-out;
+        transform: skew(0deg);
+    }
+    .h1{
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: bold;
+        color: #01204E;
+        text-shadow: 0px 0px 3px rgb(102, 68, 68);
+        margin-top: 20px;
+    }
+    .aboutImge{
+        width: 100%;
+    }
+    .footerImg{
+        height: 150px;
+        width: 100%;
+    } 
+    .imgBox{
+        height: 250px;
+        padding: 30px;
+        font-size: 17px;
+    }
+
+ @media only screen and (max-width: 799px) {
+
+    .about-us-container>.innerDiv{
+        flex-direction:column-reverse;
+        align-items: center;
+    
+    }
+    .about-us-container>.innerDiv>.left{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .about-us-container>.innerDiv>.left>img{
+       width: 100%;
+    
+    }
+    .about-us-container>.innerDiv>.right>p{
+        width: 95%;
+       text-align: justify !important;
+    }
+    .about-us-container>.innerDiv>.right{
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speciality>.lower>.card1,.speciality>.lower>.card2{
+        width: 100%;
+        height: 270px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+box-shadow: none;
+transform: skew(0deg);
+
+    }
+    .speciality>.lower{
+        background: none;
+    }
+    .h1{
+        font-size: 35px;
+    
+    }
+    .footerImg{
+        height: 100px;
+        width: 100%;
+    } 
+    .imgBox1{
+        height: 140px;
+        width: 70%;
+
+    }
+    .imgBox{
+        height: 300px;
+        padding: 20px;
+        font-size: 16px;
+        background: none;
+    }
+    /* .about-us-container>.innerDiv{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+
+    }
+    .about-us-container.innerDiv>.left{
+        width: 95%;
+      height: auto;
+      margin: 0 !important;
+
+    }
+    .about-us-container.innerDiv>.left>img{
+        height: 250px;
+        width: 100%;
+        margin: 0%;
+        }
+        .about-us-container.innerDiv>.right{
+        width: 95%;
+        height: auto;    
+    }
+    .imgBox{
+        height: 320px;
+        font-size: 16px;
+    }
+    .speciality{
+        width: 100%;
+        height: auto;
+    
+    }
+    .speciality>.lower{
+        width: 80%;
+    }
+    .speciality>.lower>.card1,.speciality>.lower>.card2{
+        width: 100%;
+        height: 280px;
+        font-size: 16px;
+      
+    } 
+   
+  .about-us-container{
+    height: auto;
+  }
+    .lower{
+height: auto;
+width: 95%;
+flex-direction: column-reverse;
+
+    }
+    .lower>.left{
+        width: 95%;
+        height: 250px;
+    }
+    .lower>.right{
+        width: 95%;
+        height: auto;
+    }
+    .speciality>.lower>.card1,.speciality>.lower>.card2{
+        width: 95%;
+        height: auto; 
+        font-size: 16px;
+    
+    }
+    .imgBox{
+        height: 320px;
+        font-size: 16px;
+    }
+    .awardImg{
+  display: none;
+    }
+  
+    .footerImg{
+        height: 100px !important;
+    }
+    .h1{
+        width: 100%;
+        font-size: 22px;
+    }  */
+
+} 
+
+@media only screen and (min-width: 800px) and (max-width:1000px) {
+
+    .about-us-container>.innerDiv{
+     width: 100%;
+     flex-direction: column-reverse;
+    }
+    .about-us-container>.innerDiv>.left{
+        width: 80%;
+    }
+    .about-us-container>.innerDiv>.right{
+        width: 80%;
+        height: auto;
+        padding-left: 0px;
+    }
+    .about-us-container>.innerDiv>.right>p{
+        text-align: center;
+        width: 100%;
+    }
+    .imgBox1{
+        width: 50%;
+    }
+ 
+}
